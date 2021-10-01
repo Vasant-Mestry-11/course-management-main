@@ -40,7 +40,6 @@ export default function (state = initialstate, action) {
         category: action.payload,
       };
     case SEARCH_CATEGORY: {
-      console.log('in filter');
       return {
         ...state,
 

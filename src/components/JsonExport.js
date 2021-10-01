@@ -19,7 +19,6 @@ function JsonExport(props) {
   }, []);
 
   const categories = props.category.categories;
-  console.log(categories);
 
   const csvReport = {
     filename: 'Report.csv',

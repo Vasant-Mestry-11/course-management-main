@@ -23,7 +23,6 @@ export class CreateCategory extends Component {
 
   onChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
-    console.log(e.target.value);
   };
 
   handleSubmit = (e) => {
@@ -41,7 +40,6 @@ export class CreateCategory extends Component {
         createdAt: this.state.createdAt,
       };
 
-      console.log('new Category object', newCategory);
       this.props.createCategory(newCategory, this.props.history);
     }
   };

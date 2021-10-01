@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 class Course extends Component {
   render() {
     const { course, deleteCourse, handleCheckbox } = this.props;
-    console.log('course',course)
     const date = course.courseCreationDate;
     let formatedDate = null;
     typeof date === 'string' ?

@@ -7,12 +7,14 @@ import { deleteCategory } from '../actions/categoryActions';
 
 export class CategoryDisplay extends Component {
   handleClick = (id) => {
-    this.props.deleteCategory(id);
+    let result = window.confirm("Are you sure to delete category ?")
+    if (result) {
+      this.props.deleteCategory(id);
+    }
   };
 
   render() {
     const category = this.props.category;
-    console.log('Category display', category);
 
     return (
       <>
@@ -23,7 +25,7 @@ export class CategoryDisplay extends Component {
             </div>
 
             <div className='col-lg-8 col-md-4 col-8'>
-              <Link to='/courses' className="h3">
+              <Link to='/courses' className="text-decoration-none text-dark">
                 <h3>{category.categoryName}</h3>
               </Link>
               <p>{category.createdAt}</p>

@@ -26,13 +26,11 @@ export class Dashboard extends Component {
 
   componentDidMount() {
     this.props.getCategories();
-    console.log('in did mount');
   }
 
   render() {
     const categories = this.props.category.categories;
 
-    console.log(categories.length);
 
     const indexOfLastPost = this.state.currentPage * this.state.postsPerPage;
     const indexOfFirstPost = indexOfLastPost - this.state.postsPerPage;
@@ -41,7 +39,6 @@ export class Dashboard extends Component {
     const paginate = (pageNumber) => {
       this.setState({ currentPage: pageNumber });
     };
-    console.log('Paginate', paginate);
     return (
       <>
         <div className='container mt-4'>

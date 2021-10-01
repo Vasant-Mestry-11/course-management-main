@@ -52,13 +52,11 @@ class EditCategory extends Component {
         categoryName: this.state.categoryName,
         createdAt: this.state.createdAt,
       };
-      console.log('Edit Cat', editCategory);
       this.props.updateCategory(
         this.state.id,
         editCategory,
         this.props.history
       );
-      console.log('afterEdit Cat', this.props.history);
     }
   };
 
