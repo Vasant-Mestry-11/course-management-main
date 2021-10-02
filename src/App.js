@@ -39,7 +39,7 @@ function App() {
         autoClose={1500}
         position="top-right"
         hideProgressBar
-        theme="colored"
+        theme="light"
       />
     </>
   );

@@ -35,6 +35,12 @@
       "categoryName": "Software Testing",
       "createdAt": "2021-10-22",
       "id": 7
+    },
+    {
+      "id": 8,
+      "categoryId": "123",
+      "categoryName": "Data Science 1",
+      "createdAt": "2021-10-02"
     }
   ]
 }

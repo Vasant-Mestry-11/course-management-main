@@ -13,7 +13,7 @@ class Course extends Component {
     return (
       <div className="col">
         <div className="card w-100  mb-2">
-          <div className="card-body alert-success border-success ">
+          <div className="card-body alert-warning border-warning ">
             <p className="card-title pb-4 h4 fw-bolder">{course.courseTitle}</p>
             <p className="card-text">
               {course.courseDescription}
