@@ -32,6 +32,11 @@ export default function Navbar() {
                 Add Category
               </Link>
             </li> */}
+             <li className='nav-item'>
+              <Link className='nav-link active' to='/assignments'>
+                Assignments
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
