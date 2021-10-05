@@ -15,3 +15,7 @@ export const UPDATE_COURSE = 'UPDATE_COURSE';
 export const DELETE_COURSE = 'DELETE_COURSE';
 export const BULK_DELETE = 'BULK_DELETE';
 // export const GET_ERRORS = 'GET_ERRORS';
+
+export const ADD_ASSIGNMENT = 'ADD_ASSIGNMENT';
+export const UPDATE_ASSIGNMENT = 'UPDATE_ASSIGNMENT';
+

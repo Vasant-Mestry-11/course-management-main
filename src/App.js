@@ -17,6 +17,7 @@ import UpdateCourse from './components/UpdateCourse';
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from 'react-toastify';
 import CreateCourse from './components/CreateCourse';
+import Assignment from './components/Assignment'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route exact path="/courses" component={CourseDashboard} />
             <Route exact path="/createCourse" component={CreateCourse} />
             <Route exact path="/updateCourse/:id" component={UpdateCourse} />
+            <Route exact path="/assignments" component={Assignment} />
           </Router>
         </div>
       </Provider>
